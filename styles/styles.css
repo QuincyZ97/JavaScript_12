@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* START MOBILE DESIGN FIRST! */
+body {
+  padding: 20px;
+  font-family: 'Commissioner', sans-serif;
+  display: flex;
+}
+
+#nameDisplay {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#menuToggle {
+  background: transparent;
+  border: none;
+  margin-right: 5px;
+  background-size: cover;
+  background-image: url("../menu-icon.png");
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.colorMenu {
+  /* display: none; */
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-350px);
+}
+
+.colorMenu__item {
+  list-style: none;
+  text-align: left;
+  margin-top: 15px;
+  -webkit-box-shadow: 5px 6px 15px -1px #000000;
+  box-shadow: 5px 6px 15px -1px #000000;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px;
+  width: 200px;
+  font-size: 25px;
+}
+
+.colorMenu--expand {
+  /* display: block; */
+  transform: translateY(0px);
+}
+
+.colorMenu__item--active {
+  font-weight: 800;
+  border-left: 3px solid;
+  transform: translateX(15px);
+}
+
+.colorMenu__item:hover {
+  opacity: 0.7;
+}
+
+.colorMenu__item:first-child {
+  margin-top: 0px;
+  background-color: #ffffff;
+}
+
+.colorMenu__item:nth-child(2) {
+  background-color: #FF0000;
+}
+
+.colorMenu__item:nth-child(3) {
+  background-color: #FF8C00;
+}
+
+.colorMenu__item:nth-child(4) {
+  background-color: #FF00FF;
+}
+
+.colorMenu__item:nth-child(5) {
+  background-color: #7CFC00;
+}
+
+
+#radioDisplay {
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  transform: scale(3);
+}
+
+#colorExamples {
+  display: flex;
+  position: absolute;
+  top: 9%;
+  left: 43.8%;
+}
+
+.box {
+  text-align: center;
+  font-weight: 800;
+  font-size: 12px;
+  height: 14px;
+  width: 30px;
+  margin: 0px 9px;
+  -webkit-box-shadow: 0px 3px 5px 3px #000000;
+  box-shadow: 0px 3px 5px 3px #000000;
+}
+
+.tip {
+  display: flex;
+  position: absolute;
+  top: 13%;
+  left: 44%;
+  font-style: italic;
+}
+
+.box--white {
+  background-color: #ffffff;
+}
+
+.box--red {
+  background-color: #DC143C;
+}
+
+.box--orange {
+  background-color: #FF8C00;
+}
+
+.box--purple {
+  background-color: #BA55D3;
+}
+
+.box--green {
+  background-color: #00FF7F;
+}
+
+/* ============= TABLET ============= */
+/* =============DESKTOP============== */
+/* ============ DESKTOP - EXTRA WIDE ======================*/
+@media (min-width: 1920px) {
+  html {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

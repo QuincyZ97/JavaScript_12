@@ -1,0 +1,29 @@
+@import "./constants";
+/* RESET */
+* { 
+  margin: 0px;
+  padding: 0px;
+}
+/* START MOBILE DESIGN FIRST! */
+body {
+background-color: gray;
+}
+
+/* ============== SECTION HERE ================*/
+
+
+/* ============= TABLET ============= */
+@media (min-width: 768px) {
+}
+
+/* =============DESKTOP============== */
+@media (min-width: 1024px) {
+}
+
+/* ============ DESKTOP - EXTRA WIDE ======================*/
+@media (min-width: 1920px) {
+  html {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+}
